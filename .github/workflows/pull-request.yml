@@ -2,7 +2,8 @@ name: Validate pull request before putting into queue
 
 on:
   pull_request:
-
+  push:
+    branches: [ 'master', ]
 jobs:
   validate-pr:
     runs-on: ubuntu-latest
